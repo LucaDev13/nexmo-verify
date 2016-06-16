@@ -7,6 +7,8 @@
     <%= f.input :email, required: true, autofocus: true %>
     <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
     <%= f.input :password_confirmation, required: true %>
+
+    
     <div class="form-group">
       <%= f.label :phone_number %> <i>(Leave blank to disable two factor authentication)</i><br />
       <%= f.number_field :phone_number, class: "form-control", placeholder: "e.g. 447555555555 or 1234234234234"  %>

@@ -6,6 +6,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
+gem 'nexmo'
+gem 'dotenv-rails', groups: [:development, :test]
+
+
 group :development, :test do
   gem 'byebug'
 end
@@ -23,6 +27,7 @@ group :development do
   gem 'rails_layout'
 end
 group :development, :test do
+  gem 'meta_request'
   gem 'sqlite3'
 end
 group :production do
