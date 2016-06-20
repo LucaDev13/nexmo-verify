@@ -3,32 +3,29 @@
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    Verify API App
-                </a>
+            <li>
+                <%= link_to "Home", root_path, class: "sidebar-brand"  %>
             </li>
             <li>
-                <a href="#">Dashboard</a>
+                <a href="https://dashboard.nexmo.com" target="_blank">Dashboard</a>
             </li>
             <li>
-                <a href="#">Shortcuts</a>
+                <a href="https://help.nexmo.com/hc/en-us" target="_blank">Knowledge Base</a>
             </li>
             <li>
-                <a href="#">Overview</a>
+                <a href="https://docs.nexmo.com" target="_blank">Nexmo Docs</a>
             </li>
             <li>
-                <a href="#">Events</a>
+                <a href="https://developers.nexmo.com/Quickstarts" target="_blank">Quickstarts</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="https://developers.nexmo.com" target="_blank">Developers</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="https://www.nexmo.com" target="_blank">Nexmo Homepage</a>
             </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+
+
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -39,8 +36,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Nexmo Verify App</h1>
-                    <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                    <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                    <p>This app demonstrates a basic implementation of the Nexmo Verify two factor authentication using Ruby on Rails and Devise authentication gem.</p>
+                    <p>An user can register and add her phone number. <br>
+                      Subsequent login attempts will require the user to insert the Verify code received via SMS.
+                      If the code inserted is incorrect, the user will be ridirected to the login page.</p>
+                    <p>The left hand menu has some useful links for Developers.</p>
                     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                 </div>
             </div>
