@@ -7,29 +7,27 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'nexmo'
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails'
 
 
 group :development, :test do
   gem 'byebug'
+  gem 'meta_request'
+  gem 'sqlite3'
 end
+
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-end
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'high_voltage'
-gem 'simple_form'
-group :development do
+  gem 'bootstrap-sass'
+  gem 'devise'
+  gem 'high_voltage'
+  gem 'simple_form'
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
 end
-group :development, :test do
-  gem 'meta_request'
-  gem 'sqlite3'
-end
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
