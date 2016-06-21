@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'nexmo'
 gem 'dotenv-rails'
+gem 'devise'
 
 
 group :development, :test do
@@ -20,7 +21,6 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'bootstrap-sass'
-  gem 'devise'
   gem 'high_voltage'
   gem 'simple_form'
   gem 'better_errors'
