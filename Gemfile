@@ -10,6 +10,7 @@ gem 'nexmo'
 gem 'dotenv-rails'
 gem 'devise'
 gem 'simple_form'
+gem 'bootstrap-sass'
 
 
 group :development, :test do
@@ -21,7 +22,6 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'bootstrap-sass'
   gem 'high_voltage'
   gem 'better_errors'
   gem 'quiet_assets'
